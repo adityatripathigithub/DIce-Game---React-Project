@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const StartGame = () => {
+const StartGame = ({toggle}) => {
     return (
         <container className="flex">
             <div className='pt-40 px-5' >
@@ -11,7 +11,7 @@ const StartGame = () => {
 
             <div className='mx-auto my-auto' >
                 <h1 className='text-8xl font-bold'> Dice Game</h1>
-                <button className='w-[50%] mt-5 mx-[50%] p-1 bg-black text-white hover:'>Play Now</button>
+                <button onClick={toggle}  className='w-[50%] mt-5 mx-[50%] p-1 bg-black text-white hover:'>Play Now</button>
             </div>
 
         </container>
